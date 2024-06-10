@@ -1,0 +1,106 @@
+<!DOCTYPE html>     <!-- indica al navegador que el documento es un archivo HTML5. -->
+
+<html lang="en">
+    <!-- html: Etiqueta raíz que contiene todo el contenido de la página web.
+-->
+
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">  <!-- Define la codificación de caracteres del documento como UTF-8.-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">: Configura el viewport para que se adapte al ancho del dispositivo y tenga una escala inicial de 1.0.
+ -->
+    
+    <title>Display</title>     <!-- Define el título de la página que se muestra en la barra de título del navegador. -->
+
+
+    <link rel="stylesheet" href="style.css">    <!-- Enlaza una hoja de estilos externa llamada "style.css" para aplicar estilos al contenido de la página. -->
+  
+
+
+</head>     <!--<head>: Etiqueta que contiene metadatos sobre la página, como el conjunto de caracteres y el título.
+    -->
+
+
+<body>   <!--<body>: Etiqueta que contiene el contenido visible de la página web.
+  -->
+
+    <header>     <!-- Etiqueta para el encabezado de la página (generalmente contiene el logotipo, el título del sitio y la navegación). -->
+
+        <h1>Display</h1>     <!-- Etiqueta semántica -->
+
+    <!-- Etiqueta semántic -->
+
+    </header>
+    <!-- MAIN: Etiqueta semántica para el contenido principal -->
+    <main>
+        <h2>Definición</h2>
+        <p>Pantalla, visualización, muestra. Lo que se muestra en la pantalla</p>
+        <p>La propieddad "display" especifica si un elemento es tratado como block o inline element y el diseño de lxs
+            hijxs.</p>
+        <br>
+        <article id="displayNone">
+            <h2>Display None</h2>
+            <p><strong>Oculta el elemento completamente a la vista, haciéndolo invisible.
+                Permite dejar de visualizar contenido dentro del sitio.</strong></p>
+            <p> Cuando ocupamos uno de estos, las etiquetas dejan de verse pero el código sigue ahí.</p>
+        </article>
+        <hr>
+        <article id="displayBlock">
+            <h2>Display Block</h2>
+            <p>Muestra el elemento como un elemento a nivel de bloque.
+
+
+            </p> Se utiliza para mostrar el elemento "displayBlock" Ocupa todo el ancho disponible y comienza en una nueva línea. Es útil para crear secciones distintas en tu página web, como encabezados, párrafos o elementos de formulario</p>
+            <p><strong>Cuando le ponemos a un elemento que ocupe toda la línea.</strong></p>
+            <p>Sin tamaño especificado:</p>
+            <figure class="ejemplo">
+                <h1 class="displayBlock">Texto</h1>
+                <h1 class="displayBlock">Texto</h1>
+            </figure>
+            <p>Con tamaño especificado:</p>
+            <figure class="ejemplo">
+                <h1 class="displayBlockConTamaño">Texto</h1>
+                <h1 class="displayBlockConTamaño">Texto</h1>
+            </figure>
+        </article>
+        <article id="displayInline">
+            <h2>Display Inline</h2>
+            <p>Muestra el elemento en línea con el texto circundante Adecuado para elementos de texto pequeños, imágenes o enlaces en línea.
+                .</p>
+            </p>Trata el elemento como si fuera parte del flujo de texto.
+
+            <p>Significa que el contenedor o bloque se adapta al ancho de su contenido hijx.</p>
+            <p>Si le pones tamaño, ignora las propiedades de alto (height) y ancho (width).</p>
+            <p><strong>El contenido solo ocupa el espacio que necesita.</strong></p>
+            
+            <h1 class="displayInline">Texto</h1>
+            <h1 class="displayInline">Texto</h1>
+
+        </article>
+        <article id="displayInline-Block">
+            <h2>Display Inline-Block</h2>
+            <p></p>
+            <p>Si se le pone tamaño al display block funciona pero sigue ocupando todo el renglón.</p>
+            <p><strong>El contenido ocupa el espacio designado.</strong></p>
+            <figure class="ejemplo">
+                <h1 class="displayInline-Block">Texto</h1>
+                <h1 class="displayInline-Block">Texto</h1>
+            </figure>
+            <p>Esto puede ser problemático si se quiere controlar el tamaño del componente y que el contenido esté en la
+                misma línea.</p>
+
+        </article>
+        <br>
+    </main>
+    <!-- Etiqueta para el pie de página de la página (generalmente contiene información de copyright, enlaces a otras páginas y datos de contacto). -->
+    <footer>
+        
+        <p><s>Esto funciona para los "padres". Flex y Grid funcionan para los "hijxs".</s></p>
+    </footer>
+</body>
+
+</html>
